@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="calculadora">
+
+        <!--Calculadora-->
+        <span id="resultado">0</span>
+        <table>
+            <tr>
+                <td> <button onclick="clean()">C</button> </td>
+                <td> <button onclick="backspace()"> &larr; </button> </td>
+                <td> <button onclick="input('+')"> + </button> </td>
+                <td> <button onclick="input('-')"> - </button> </td>
+            </tr>
+
+            <tr>
+                <td> <button onclick="input('7')"> 7 </button> </td>
+                <td> <button onclick="input('8')"> 8 </button> </td>
+                <td> <button onclick="input('9')"> 9 </button> </td>
+                <td> <button onclick="input('/')"> / </button> </td>
+            </tr>
+
+            <tr>
+                <td> <button onclick="input('4')"> 4 </button> </td>
+                <td> <button onclick="input('5')"> 5 </button> </td>
+                <td> <button onclick="input('6')"> 6 </button> </td>
+                <td> <button onclick="input('*')"> X </button> </td>
+            </tr>
+
+            <tr>
+                <td> <button onclick="input('1')"> 1 </button> </td>
+                <td> <button onclick="input('2')"> 2 </button> </td>
+                <td> <button onclick="input('3')"> 3 </button> </td>
+                <td rowspan="2" class="button"> <button onclick="calcular()"> = </button> </td>
+            </tr>
+
+            <tr>
+                <td> <button onclick="input('0')"> 0 </button> </td>
+                <td colspan="2"> <button onclick="input('.')"> . </button> </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
